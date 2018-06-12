@@ -1,6 +1,8 @@
 # vue-city
 
 > vue-city
+## 展示效果图
+![image](https://github.com/xxxone/vue-city/tree/master/src/assets/city.gif)
 
 ## Build Setup
 
