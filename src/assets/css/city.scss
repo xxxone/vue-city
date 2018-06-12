@@ -1,0 +1,147 @@
+.searchBox {
+    display: flex;
+    height: 90px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(35, 24, 21, 0.1);
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+        width: 616px-30px;
+        height: 60px;
+        background-color: #f6f6f6;
+        border-radius: 30px;
+        padding-left: 30px;
+        font-family: PingFang-SC-Medium;
+        font-size: 28px;
+    }
+
+    span {
+        font-family: PingFang-SC-Regular;
+        font-size: 28px;
+        color: #8977f6;
+    }
+}
+.citys-searchlist{
+    position: absolute;
+    top: 78px;
+    width: 100%;
+    bottom: 0;
+    z-index: 10001;
+    background: #fff;
+    overflow: auto;
+    li{
+        margin: 0 26px 0 26px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 25px;
+        border-bottom: 1px solid #ccc;
+    }
+    .nomatch{
+        line-height: 80px;
+        text-align: center;
+        font-size: 28px;
+        color: #aaa;
+    }
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+
+    .view {
+      width: 100%;
+      height:100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: #f6f6f6;
+    }
+}
+.aside {
+	flex: 2.2;
+	height: 100%;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	background-color: #f6f6f6;
+	&::-webkit-scrollbar {display:none}
+	> ul {
+	  height: 100%;
+	  width: 100%;
+	  li {
+	    text-align: center;
+	    a {
+	      display: block;
+	      padding: 4vw 0;
+	      position: relative;
+	      font-size: 30px;
+	      background-color: #fff;
+	    }
+	    .active {
+	      position: relative;
+	      font-size: 30px;
+	      color: #8977f6;
+	      background-color: #f6f6f6;
+	      &::before {
+	        width: 3px;
+	        height: 28px;
+	        content: "";
+	        position: absolute;
+	        left: 0;
+	        top: 50%;
+	        margin-top: -14px;
+	        background-color: #8977f6;
+	      }
+	    }
+	  }
+	}
+}
+.main {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  flex: 9.8;
+  height: 100%;
+  &::-webkit-scrollbar {display:none}
+  background-color: #f7f7f7;
+  >h2 {
+    font-size: 24px;
+    padding: 2vw 4vw;
+    color:#333;
+    letter-spacing: 2px;
+    background-color: rgb(247, 247, 247);
+  }
+  >ul {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(247, 247, 247);
+
+    li {
+      background-color: rgb(247, 247, 247);
+      padding: 30px 0px 30px 30px;
+      float:left;
+      a {
+        color: #666;
+        display: block;
+        span {
+            border: 1px solid #e5e5e5;
+            border-radius: 3px;
+            background : #fff;
+            color: #666;
+          	text-align: center;
+          	padding: 10px;
+            font-size:30px;
+        }
+      }
+    }
+  }
+}
